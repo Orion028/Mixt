@@ -1,11 +1,13 @@
+import Header from "./components/header";
+import HeroSection from "./components/heroSection";
 
 function App() {
-
   return (
     <>
-      <h1>Mist</h1>
+      <Header />
+      <HeroSection />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

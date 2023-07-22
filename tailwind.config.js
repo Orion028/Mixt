@@ -7,6 +7,11 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    'prettier-plugin-tailwindcss',
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+    },
+  ],
 }
 
