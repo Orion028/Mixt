@@ -15,7 +15,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section>
+    <div>
       {Array.isArray(slides) && slides.length > 0 && (
         <>
           <Swiper
@@ -55,7 +55,7 @@ const HeroSection = () => {
           </button>
         </>
       )}
-    </section>
+    </div>
   );
 };
 
