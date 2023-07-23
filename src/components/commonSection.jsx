@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import Wrapper from "./wrapper";
-import { Products } from "../types";
 import Card from "./card";
 
-const CommonSection = ({ title }: { title: string }) => {
-  const [data, setData] = useState<Products[]>([]);
+const CommonSection = ({ title }) => {
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products?sort=desc&limit=4")

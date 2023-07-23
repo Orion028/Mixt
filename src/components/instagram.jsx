@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { Products } from "../types";
 import { IoCopySharp } from "react-icons/io5";
 
 const Instagram = () => {
-  const [data, setData] = useState<Products[]>([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products?limit=8")

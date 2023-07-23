@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import Wrapper from "./wrapper";
-import { Products } from "../types";
 
 const Categories = () => {
-  const [categories, setCategories] = useState<Products[]>([]);
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products?sort=desc&limit=4")

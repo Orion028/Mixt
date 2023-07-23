@@ -6,7 +6,7 @@ import Wrapper from "./wrapper";
 import { cn } from "../utils";
 
 const Header = () => {
-  const [hamburger, setHamburger] = useState<boolean>(false);
+  const [hamburger, setHamburger] = useState(false);
 
   const handleHamburger = () => {
     setHamburger(!hamburger);

@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
-import { Products } from "../types";
 
 const HeroSection = () => {
-  const [slides, setSlides] = useState<Products[]>([]);
+  const [slides, setSlides] = useState([]);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products?limit=4")

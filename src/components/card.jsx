@@ -1,10 +1,4 @@
-interface CardProps {
-  src: string;
-  title: string;
-  price: number;
-}
-
-const Card = ({ src, title, price }: CardProps) => {
+const Card = ({ src, title, price }) => {
   return (
     <li className="sm:basis-5/12 lg:basis-1/5">
       <a href="#FIXME" title={title} target="_self">
