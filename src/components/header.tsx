@@ -16,7 +16,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white">
       <Wrapper customStyling="flex justify-between items-center py-4">
         <h1 className="lg:basis-[15%]">
-          <a href="#FIXME">
+          <a title="Mixt" href="#FIXME" target="_self">
             <img src={Logo} alt="Mist" />
           </a>
         </h1>
@@ -29,7 +29,11 @@ const Header = () => {
               hamburger ? cn("top-3 -translate-y-1/2 rotate-[45deg]") : cn("")
             }`}
           />
-          <span className={`${hamburger ? cn("-translate-x-1/2 opacity-0") : cn("")}`} />
+          <span
+            className={`${
+              hamburger ? cn("-translate-x-1/2 opacity-0") : cn("")
+            }`}
+          />
           <span
             className={`bottom-1 ${
               hamburger
@@ -45,32 +49,62 @@ const Header = () => {
         >
           <ul className="space-y-5 lg:space-y-0 w-full h-[calc(100vh_-_88px)] lg:h-auto lg:flex items-center justify-between uppercase">
             <li>
-              <a className="hover:underline" href="#FIXME" title="Women" target="_self">
+              <a
+                className="hover:underline"
+                href="#FIXME"
+                title="Women"
+                target="_self"
+              >
                 Women
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="#FIXME" title="Men" target="_self">
+              <a
+                className="hover:underline"
+                href="#FIXME"
+                title="Men"
+                target="_self"
+              >
                 Men
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="#FIXME" title="Collections" target="_self">
+              <a
+                className="hover:underline"
+                href="#FIXME"
+                title="Collections"
+                target="_self"
+              >
                 Collections
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="#FIXME" title="About" target="_self">
+              <a
+                className="hover:underline"
+                href="#FIXME"
+                title="About"
+                target="_self"
+              >
                 About
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="#FIXME" title="Contact" target="_self">
+              <a
+                className="hover:underline"
+                href="#FIXME"
+                title="Contact"
+                target="_self"
+              >
                 Contact
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="#FIXME" title="Blog" target="_self">
+              <a
+                className="hover:underline"
+                href="#FIXME"
+                title="Blog"
+                target="_self"
+              >
                 Blog
               </a>
             </li>
@@ -83,11 +117,17 @@ const Header = () => {
           <li>
             <FiUser className="text-2xl" />
           </li>
-          <li>
+          <li className="relative">
             <FiHeart className="text-2xl" />
+            <span className="absolute top-2 right-0 bg-[#60b846] rounded-full text-[8px] text-center text-white my-auto w-3 h-3">
+              1
+            </span>
           </li>
-          <li>
+          <li className="relative">
             <PiBagSimpleBold className="text-2xl" />
+            <span className="absolute top-2 right-0 bg-[#7c3e94] rounded-full text-[8px] text-center text-white my-auto w-3 h-3">
+              2
+            </span>
           </li>
         </ul>
       </Wrapper>
